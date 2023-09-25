@@ -1,0 +1,452 @@
+/* Page img */
+
+body {
+    background-image: url(../images/galaxy.jpg);
+}
+
+.samanyolu{
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    border: 4px dashed white;
+    animation: turn 125s linear infinite;
+    position: relative;
+
+}
+
+/* Neptün */
+
+.samanyolu .neptun {
+    width: 1100px;
+    height: 1100px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    text-align: center;
+    animation: turn 10s linear infinite;
+}
+
+.samanyolu .neptun img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -40px;
+    animation: turn 20s linear infinite;
+}
+
+/* Uranüs */
+ .samanyolu .uranus {
+    width: 950px;
+    height: 950px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    text-align: center;
+    animation: turn 15s linear infinite;
+}
+
+.samanyolu .uranus img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -40px;
+    animation: turn 20s linear infinite;
+} 
+
+/* Satürn */
+ .samanyolu .saturn {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    text-align: center;
+    animation: turn 30s linear infinite;
+}
+
+.samanyolu .saturn img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    animation: turn 50s linear infinite;
+} 
+
+/* Jupiter */
+.samanyolu .jupiter {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    text-align: center;
+    animation: opturn 20s linear infinite;
+}
+
+.samanyolu .jupiter img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    animation: turn 20s linear infinite;
+} 
+
+/* Mars */
+ .samanyolu .mars {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    text-align: center;
+    animation: turn 30s linear infinite;
+}
+
+.samanyolu .mars img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -25px;
+    animation: turn 20s linear infinite;
+} 
+
+/* Dünya */
+
+ .samanyolu .dunya {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: absolute;
+    top: 380px;
+    left: 380px;
+    text-align: center;
+    animation: turn 40s linear infinite;
+}
+
+.samanyolu .dunya img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -25px;
+    animation: turn 10s linear infinite;
+} 
+
+
+/* MOON */
+
+.samanyolu .dunya .moon{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    /* Ayın çemberi */
+    /* border: 2px dashed rgb(255, 255, 255); */
+    position: absolute;
+    top: -40px;
+    left: 185px;
+    text-align: center;
+    animation: turn 4s linear infinite;
+}
+
+.samanyolu .dunya .moon img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    animation: turn 5s linear infinite;
+} 
+
+
+
+/* Venüs */
+.samanyolu .venus {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: absolute;
+    top: 440px;
+    left: 430px;
+    text-align: center;
+    animation: turn 20s linear infinite;
+}
+
+.samanyolu .venus img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -19px;
+    animation: turn 7s linear infinite;
+} 
+
+/* Merkür */
+.samanyolu .merkur {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: absolute;
+    top: 490px;
+    left: 480px;
+    text-align: center;
+    animation: opturn 5s linear infinite;
+}
+
+.samanyolu .merkur img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -19px;
+    animation: turn 20s linear infinite;
+} 
+
+/* Güneş */
+.gunes img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 560px;
+    left: 560px;
+    animation: turn 5s linear infinite;
+}
+
+
+ @keyframes turn {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}   
+
+/* opturn = opposite turn */
+@keyframes opturn{
+
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DİKKAT
+Samanyolu dışındaki gezegenlere de relative verince
+bütün sayısal değerleri teker teker hesaplamam gerekti.
+Bu yüzden yalnızca samanyoluna relative verip içindeki her gezegene absolute
+vererek eksenler arasında aritmetik fark oluşturarak kolaylıkla ilerlebildim. */
+
+
+
+
+
+/* .samanyolu {
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    border: 4px dashed white;
+    animation: turn 25s linear infinite;
+}
+
+
+/* Neptün */
+/* .samanyolu .neptun {
+    width: 1100px;
+    height: 1100px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: relative;
+    top: 50px;
+    left: 50px;
+    text-align: center;
+    animation: turn 10s linear infinite;
+}
+
+.samanyolu .neptun img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -40px;
+    animation: turn 20s linear infinite;
+} */
+
+/* Uranüs */
+/* .samanyolu .uranus {
+    width: 950px;
+    height: 950px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: relative;
+    top: -970px;
+    left: 130px;
+    text-align: center;
+    animation: turn 15s linear infinite;
+}
+
+.samanyolu .uranus img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: -40px;
+    animation: turn 20s linear infinite;
+} */
+
+/* Satürn */
+/* .samanyolu .saturn {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: relative;
+    top: -1850px;
+    left: 200px;
+    text-align: center;
+    animation: turn 30s linear infinite;
+}
+
+.samanyolu .saturn img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -100px;
+    animation: turn 50s linear infinite;
+} */
+
+/* Jupiter */
+/* .samanyolu .jupiter {
+    width: 680px;
+    height: 680px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: relative;
+    top: -2570px;
+    left: 250px;
+    text-align: center;
+    animation: turn 90s linear infinite;
+}
+
+.samanyolu .jupiter img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -50px;
+    animation: turn 20s linear infinite;
+} */
+
+/* Mars */
+/* .samanyolu .mars {
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: relative;
+    top: -3210px;
+    left: 280px;
+    text-align: center;
+    animation: turn 30s linear infinite;
+}
+
+.samanyolu .mars img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -25px;
+    animation: turn 20s linear infinite;
+} */
+
+/* Dünya */
+
+/* .samanyolu .dunya {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: relative;
+    top: -3750px;
+    left: 350px;
+    text-align: center;
+    animation: turn 40s linear infinite;
+}
+
+.samanyolu .dunya img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -35px;
+    animation: turn 20s linear infinite;
+} */
+
+/* Venüs
+.samanyolu .venus {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: relative;
+    top: -4190px;
+    left: 395px;
+    text-align: center;
+    animation: turn 20s linear infinite;
+}
+
+.samanyolu .venus img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -19px;
+    animation: turn 7s linear infinite;
+} */
+
+/* Merkür
+.samanyolu .merkur {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px dashed rgb(255, 255, 255);
+    position: relative;
+    top: -4550px;
+    left: 450px;
+    text-align: center;
+    animation: turn 5s linear infinite;
+}
+
+.samanyolu .merkur img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -19px;
+    animation: turn 20s linear infinite;
+} */
+
+/* Güneş
+.gunes img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 4000;
+    left: 950;
+    animation: turn 5s linear infinite;
+} */
